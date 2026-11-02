@@ -3,119 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Butcher Barbers | Premium Barbering</title>
+<title>Butcher Barbers | Premium Barbering in Reading</title>
+<meta name="description" content="Butcher Barbers in Reading offers premium haircuts, skin fades and beard styling. Book online through Goldie. English and Portuguese spoken.">
 <style>
-  :root{--black:#0b0b0b;--charcoal:#151515;--gold:#c9a227;--cream:#f5f1e6;--grey:#9a9a9a}
-  *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}
-  body{background:var(--black);color:var(--cream)}
-  header{display:flex;justify-content:space-between;align-items:center;padding:22px 6%;position:sticky;top:0;background:rgba(11,11,11,.95);z-index:10;border-bottom:1px solid #222}
-  .logo{height:52px}
-  nav a{color:var(--cream);text-decoration:none;margin-left:26px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
-  nav a:hover{color:var(--gold)}
-  .lang{border:1px solid var(--gold);color:var(--gold);padding:8px 14px;border-radius:30px;background:none;cursor:pointer;font-size:12px}
-  .hero{min-height:82vh;display:flex;align-items:center;background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.85)),url('barbershop.jpg') center/cover}
-  .hero-inner{padding:0 6%;max-width:900px}
-  .eyebrow{color:var(--gold);letter-spacing:.35em;text-transform:uppercase;font-size:12px;margin-bottom:18px}
-  h1{font-size:clamp(42px,7vw,84px);line-height:1.02;font-weight:800;text-transform:uppercase}
-  h1 span{color:var(--gold)}
-  p.lead{margin:24px 0 34px;color:var(--grey);font-size:18px;max-width:620px}
-  .btn{display:inline-block;padding:16px 34px;border-radius:40px;text-decoration:none;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px}
-  .btn-gold{background:var(--gold);color:#111}
-  .btn-outline{border:1px solid var(--cream);color:var(--cream);margin-left:14px}
-  section{padding:90px 6%}
-  .section-title{text-align:center;margin-bottom:56px}
-  .section-title h2{font-size:clamp(30px,4vw,48px);text-transform:uppercase}
-  .section-title p{color:var(--grey);margin-top:12px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
-  .card{background:var(--charcoal);border:1px solid #242424;padding:34px;border-radius:14px}
-  .card h3{color:var(--gold);margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em}
-  .card p{color:var(--grey);line-height:1.6}
-  .price{margin-top:18px;font-size:22px;font-weight:700}
-  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-  .gallery img{width:100%;height:280px;object-fit:cover;border-radius:12px;filter:grayscale(15%)}
-  .booking{background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url('barber-chair.jpg') center/cover;text-align:center}
-  .booking h2{font-size:clamp(32px,5vw,58px);text-transform:uppercase}
-  .booking p{color:var(--grey);margin:18px auto 34px;max-width:560px}
-  footer{padding:44px 6%;border-top:1px solid #222;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;color:var(--grey);font-size:14px}
-  .social a{color:var(--cream);text-decoration:none;margin-left:20px}
-  .social a:hover{color:var(--gold)}
-  @media(max-width:700px){nav a{display:none}.btn-outline{margin-left:0;margin-top:14px}}
+:root{--black:#0a0a0a;--charcoal:#141414;--gold:#d4af37;--gold-soft:#f0d98a;--cream:#f7f3e8;--grey:#a3a3a3}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--black);color:var(--cream);font-family:'Helvetica Neue',Arial,sans-serif;line-height:1.6}
+a{color:inherit}
+img{display:block;max-width:100%}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 5%;background:rgba(10,10,10,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(212,175,55,.25)}
+.logo{height:58px;width:auto}
+nav{display:flex;align-items:center;gap:24px}
+nav a{text-decoration:none;color:var(--cream);font-size:13px;letter-spacing:.12em;text-transform:uppercase;transition:.2s}
+nav a:hover{color:var(--gold)}
+.lang{border:1px solid var(--gold);background:transparent;color:var(--gold);padding:9px 16px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;cursor:pointer;transition:.2s}
+.lang:hover{background:var(--gold);color:#111}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url('images/Full%20Pic%20of%20Barber%20shop.png') center/cover;filter:grayscale(25%) contrast(1.05)}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,10,10,.94) 15%,rgba(10,10,10,.72) 55%,rgba(10,10,10,.35))}
+.hero-inner{position:relative;z-index:2;padding:120px 5%;max-width:1000px}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.4em;text-transform:uppercase;margin-bottom:20px}
+h1{font-size:clamp(44px,7.5vw,92px);line-height:.98;text-transform:uppercase;font-weight:800;letter-spacing:-.02em}
+h1 span{color:var(--gold)}
+.lead{color:var(--grey);font-size:clamp(16px,2vw,19px);max-width:620px;margin:26px 0 36px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 34px;border-radius:999px;text-decoration:none;font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;transition:.25s}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#111;box-shadow:0 12px 30px rgba(212,175,55,.22)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(212,175,55,.32)}
+.btn-outline{border:1px solid rgba(247,243,232,.4);color:var(--cream);margin-left:12px}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+section{padding:100px 5%}
+.section-head{text-align:center;max-width:720px;margin:0 auto 60px}
+.section-head h2{font-size:clamp(32px,4.5vw,54px);text-transform:uppercase;letter-spacing:-.01em}
+.section-head h2 span{color:var(--gold)}
+.section-head p{color:var(--grey);margin-top:14px}
+.services{background:linear-gradient(180deg,#0a0a0a,#101010)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
+.card{position:relative;background:var(--charcoal);border:1px solid #262626;border-radius:18px;padding:36px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.55);box-shadow:0 20px 45px rgba(0,0,0,.45)}
+.card h3{color:var(--gold);text-transform:uppercase;letter-spacing:.1em;font-size:18px;margin-bottom:12px}
+.card p{color:var(--grey)}
+.price{display:block;margin-top:22px;font-size:26px;font-weight:800;color:var(--cream)}
+.experience{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;background:#0d0d0d}
+.experience-img{border-radius:20px;overflow:hidden;border:1px solid rgba(212,175,55,.25);box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.experience-img img{width:100%;height:520px;object-fit:cover}
+.experience h2{font-size:clamp(32px,4vw,50px);text-transform:uppercase;margin-bottom:20px}
+.experience h2 span{color:var(--gold)}
+.experience p{color:var(--grey);margin-bottom:28px}
+.gallery{background:#0a0a0a}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.gallery-grid figure{position:relative;border-radius:16px;overflow:hidden;border:1px solid #232323}
+.gallery-grid img{width:100%;height:320px;object-fit:cover;transition:.4s}
+.gallery-grid figure:hover img{transform:scale(1.06)}
+.gallery-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.9));font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream)}
+.booking{position:relative;text-align:center;overflow:hidden}
+.booking::before{content:'';position:absolute;inset:0;background:url('images/Barber%20Chairs.png') center/cover;filter:grayscale(35%)}
+.booking::after{content:'';position:absolute;inset:0;background:rgba(8,8,8,.86)}
+.booking-inner{position:relative;z-index:2;max-width:760px;margin:auto}
+.booking h2{font-size:clamp(34px,5vw,62px);text-transform:uppercase}
+.booking h2 span{color:var(--gold)}
+.booking p{color:var(--grey);margin:20px auto 36px;max-width:600px}
+.location{background:#101010}
+.location-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+.map{border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.25);min-height:380px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.location h2{font-size:clamp(30px,4vw,48px);text-transform:uppercase;margin-bottom:18px}
+.location h2 span{color:var(--gold)}
+.location p{color:var(--grey);margin-bottom:24px}
+.address{color:var(--cream);font-weight:700;margin-bottom:8px}
+footer{padding:50px 5%;border-top:1px solid rgba(212,175,55,.2);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;color:var(--grey);font-size:14px}
+.footer-logo{height:48px}
+.social{display:flex;gap:20px}
+.social a{text-decoration:none;color:var(--cream);letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.social a:hover{color:var(--gold)}
+@media(max-width:900px){.experience,.location-grid{grid-template-columns:1fr}.experience-img img{height:360px}.nav-links{display:none}}
+@media(max-width:600px){.btn-outline{margin-left:0;margin-top:14px}.gallery-grid img{height:240px}}
 </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Butcher Barbers" class="logo">
+  <img class="logo" src="images/business%20logo.png" alt="Butcher Barbers logo">
   <nav>
-    <a href="#services" data-en="Services" data-pt="Serviços">Services</a>
-    <a href="#gallery" data-en="Gallery" data-pt="Galeria">Gallery</a>
-    <a href="#book" data-en="Book" data-pt="Marcar">Book</a>
+    <div class="nav-links" style="display:flex;gap:24px">
+      <a href="#services" data-en="Services" data-pt="Serviços">Services</a>
+      <a href="#experience" data-en="The Shop" data-pt="A Loja">The Shop</a>
+      <a href="#gallery" data-en="Our Work" data-pt="O Nosso Trabalho">Our Work</a>
+      <a href="#find-us" data-en="Find Us" data-pt="Onde Estamos">Find Us</a>
+    </div>
     <button class="lang" onclick="toggleLang()">PT / EN</button>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="eyebrow" data-en="Basingstoke • Walk-ins & appointments" data-pt="Basingstoke • Atendimento e marcações">Basingstoke • Walk-ins & appointments</div>
-    <h1 data-en="Sharp cuts.<br><span>Premium finish.</span>" data-pt="Cortes precisos.<br><span>Acabamento premium.</span>">Sharp cuts.<br><span>Premium finish.</span></h1>
-    <p class="lead" data-en="Butcher Barbers delivers modern barbering with a personal, welcoming experience. Book online in seconds through Goldie." data-pt="A Butcher Barbers oferece barbearia moderna com uma experiência pessoal e acolhedora. Marque online em segundos através da Goldie.">
-      Butcher Barbers delivers modern barbering with a personal, welcoming experience. Book online in seconds through Goldie.
+    <div class="eyebrow" data-en="Reading • Walk-ins & appointments" data-pt="Reading • Atendimento e marcações">Reading • Walk-ins & appointments</div>
+    <h1 data-en="Precision cuts.<br><span>Premium finish.</span>" data-pt="Cortes precisos.<br><span>Acabamento premium.</span>">Precision cuts.<br><span>Premium finish.</span></h1>
+    <p class="lead" data-en="Butcher Barbers is a modern, welcoming barbershop in Reading. From clean skin fades to sharp beard work, every appointment is finished with care. English and Portuguese spoken." data-pt="A Butcher Barbers é uma barbearia moderna e acolhedora em Reading. Desde skin fades limpos até barbas bem alinhadas, cada atendimento é finalizado com cuidado. Falamos inglês e português.">
+      Butcher Barbers is a modern, welcoming barbershop in Reading. From clean skin fades to sharp beard work, every appointment is finished with care. English and Portuguese spoken.
     </p>
-    <a class="btn btn-gold" href="https://goldie.co.uk/" data-en="Book with Goldie" data-pt="Marcar pela Goldie">Book with Goldie</a>
+    <a class="btn btn-gold" href="https://book.heygoldie.com/Butcherbarberuk" data-en="Book with Goldie" data-pt="Marcar pela Goldie">Book with Goldie</a>
     <a class="btn btn-outline" href="#services" data-en="View services" data-pt="Ver serviços">View services</a>
   </div>
 </section>
 
-<section id="services">
-  <div class="section-title">
-    <h2 data-en="Our services" data-pt="Os nossos serviços">Our services</h2>
-    <p data-en="Choose the finish that suits your style." data-pt="Escolha o acabamento que combina com o seu estilo.">Choose the finish that suits your style.</p>
+<section class="services" id="services">
+  <div class="section-head">
+    <h2 data-en="Choose your <span>service</span>" data-pt="Escolha o seu <span>serviço</span>">Choose your <span>service</span></h2>
+    <p data-en="Straightforward barbering, done properly. Prices may vary depending on hair type and style." data-pt="Barbearia simples e bem feita. Os preços podem variar conforme o tipo de cabelo e o estilo.">Straightforward barbering, done properly. Prices may vary depending on hair type and style.</p>
   </div>
   <div class="grid">
-    <div class="card">
+    <article class="card">
       <h3 data-en="Signature Cut" data-pt="Corte Signature">Signature Cut</h3>
-      <p data-en="A tailored haircut finished with a hot towel, styling and product advice." data-pt="Corte personalizado finalizado com toalha quente, styling e recomendação de produtos.">A tailored haircut finished with a hot towel, styling and product advice.</p>
-      <div class="price">£20+</div>
-    </div>
-    <div class="card">
+      <p data-en="A tailored haircut with consultation, precision cutting and a styled finish." data-pt="Corte personalizado com consulta, corte preciso e acabamento com styling.">A tailored haircut with consultation, precision cutting and a styled finish.</p>
+      <span class="price">£20+</span>
+    </article>
+    <article class="card">
       <h3 data-en="Skin Fade" data-pt="Skin Fade">Skin Fade</h3>
-      <p data-en="Precision fading, sharp lines and a clean, defined finish." data-pt="Desvanecimento preciso, linhas marcadas e acabamento limpo e definido.">Precision fading, sharp lines and a clean, defined finish.</p>
-      <div class="price">£22+</div>
-    </div>
-    <div class="card">
+      <p data-en="Clean gradient fade, sharp lines and a defined, polished finish." data-pt="Fade com degradê limpo, linhas marcadas e acabamento definido.">Clean gradient fade, sharp lines and a defined, polished finish.</p>
+      <span class="price">£22+</span>
+    </article>
+    <article class="card">
       <h3 data-en="Beard Sculpt" data-pt="Barba Modelada">Beard Sculpt</h3>
-      <p data-en="Beard shape, line-up and conditioning for a polished look." data-pt="Modelagem de barba, alinhamento e hidratação para um visual impecável.">Beard shape, line-up and conditioning for a polished look.</p>
-      <div class="price">£12+</div>
-    </div>
+      <p data-en="Beard shaping, line-up and conditioning for a sharp, comfortable finish." data-pt="Modelagem de barba, alinhamento e hidratação para um acabamento impecável.">Beard shaping, line-up and conditioning for a sharp, comfortable finish.</p>
+      <span class="price">£12+</span>
+    </article>
+    <article class="card">
+      <h3 data-en="Cut & Beard" data-pt="Corte & Barba">Cut & Beard</h3>
+      <p data-en="The complete refresh: haircut, beard shape, line-up and styling." data-pt="Renovação completa: corte, modelagem de barba, alinhamento e styling.">The complete refresh: haircut, beard shape, line-up and styling.</p>
+      <span class="price">£30+</span>
+    </article>
   </div>
 </section>
 
-<section id="gallery">
-  <div class="section-title">
-    <h2 data-en="Inside Butcher Barbers" data-pt="Dentro da Butcher Barbers">Inside Butcher Barbers</h2>
-    <p data-en="Real work, real atmosphere." data-pt="Trabalho real, ambiente real.">Real work, real atmosphere.</p>
+<section class="experience" id="experience">
+  <div class="experience-img">
+    <img src="images/Pool%20table.png" alt="Pool table inside Butcher Barbers">
   </div>
-  <div class="gallery">
-    <img src="artwork1.jpg" alt="Barber artwork">
-    <img src="artwork2.jpg" alt="Barber artwork">
-    <img src="barbershop.jpg" alt="Butcher Barbers shop">
+  <div>
+    <h2 data-en="More than <span>a haircut</span>" data-pt="Mais do que <span>um corte</span>">More than <span>a haircut</span></h2>
+    <p data-en="Relax in a proper barbershop atmosphere — good music, good conversation and a space built around the client experience." data-pt="Relaxe num ambiente de barbearia de verdade — boa música, boa conversa e um espaço pensado na experiência do cliente.">Relax in a proper barbershop atmosphere — good music, good conversation and a space built around the client experience.</p>
+    <a class="btn btn-gold" href="https://book.heygoldie.com/Butcherbarberuk" data-en="Reserve your chair" data-pt="Reserve a sua cadeira">Reserve your chair</a>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="section-head">
+    <h2 data-en="Recent <span>work</span>" data-pt="Trabalho <span>recente</span>">Recent <span>work</span></h2>
+    <p data-en="A look inside the shop and some recent cuts from Butcher Barbers." data-pt="Um olhar dentro da loja e alguns cortes recentes da Butcher Barbers.">A look inside the shop and some recent cuts from Butcher Barbers.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure><img src="images/Client%20haircut%201.png" alt="Client haircut at Butcher Barbers"><figcaption data-en="Client haircut" data-pt="Corte de cliente">Client haircut</figcaption></figure>
+    <figure><img src="images/client%20haircut%202.png" alt="Client haircut at Butcher Barbers"><figcaption data-en="Skin fade" data-pt="Skin fade">Skin fade</figcaption></figure>
+    <figure><img src="images/client%20haircut%203.png" alt="Client haircut at Butcher Barbers"><figcaption data-en="Styled cut" data-pt="Corte com styling">Styled cut</figcaption></figure>
+    <figure><img src="images/client%20haircut%204.png" alt="Client haircut at Butcher Barbers"><figcaption data-en="Fresh finish" data-pt="Acabamento fresco">Fresh finish</figcaption></figure>
   </div>
 </section>
 
 <section class="booking" id="book">
-  <h2 data-en="Ready for your next cut?" data-pt="Pronto para o seu próximo corte?">Ready for your next cut?</h2>
-  <p data-en="Appointments are managed through Goldie. Choose your barber, time and service in under a minute." data-pt="As marcações são geridas através da Goldie. Escolha o seu barbeiro, horário e serviço em menos de um minuto.">
-    Appointments are managed through Goldie. Choose your barber, time and service in under a minute.
-  </p>
-  <a class="btn btn-gold" href="https://goldie.co.uk/" data-en="Book appointment" data-pt="Marcar horário">Book appointment</a>
+  <div class="booking-inner">
+    <h2 data-en="Ready for your <span>next cut?</span>" data-pt="Pronto para o seu <span>próximo corte?</span>">Ready for your <span>next cut?</span></h2>
+    <p data-en="Appointments are managed through Goldie. Choose your service, pick a time and secure your chair in under a minute." data-pt="As marcações são geridas através da Goldie. Escolha o serviço, selecione o horário e reserve a sua cadeira em menos de um minuto.">
+      Appointments are managed through Goldie. Choose your service, pick a time and secure your chair in under a minute.
+    </p>
+    <a class="btn btn-gold" href="https://book.heygoldie.com/Butcherbarberuk" data-en="Book appointment" data-pt="Marcar horário">Book appointment</a>
+  </div>
+</section>
+
+<section class="location" id="find-us">
+  <div class="location-grid">
+    <div>
+      <h2 data-en="Find <span>Butcher Barbers</span>" data-pt="Encontre a <span>Butcher Barbers</span>">Find <span>Butcher Barbers</span></h2>
+      <p class="address">32a Ardler Rd, Reading, United Kingdom, RG4 5AE</p>
+      <p data-en="Located in Reading, with easy access for local clients. Walk-ins are welcome where available, and online booking is always open through Goldie." data-pt="Localizada em Reading, com fácil acesso para clientes locais. Atendimento sem marcação conforme disponibilidade, e a marcação online está sempre aberta através da Goldie.">
+        Located in Reading, with easy access for local clients. Walk-ins are welcome where available, and online booking is always open through Goldie.
+      </p>
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=32a%20Ardler%20Rd%2C%20Reading%2C%20United%20Kingdom%2C%20RG4%205AE" target="_blank" rel="noopener" data-en="Open in Google Maps" data-pt="Abrir no Google Maps">Open in Google Maps</a>
+    </div>
+    <div class="map">
+      <iframe title="Butcher Barbers location" src="https://www.google.com/maps?q=32a%20Ardler%20Rd%2C%20Reading%2C%20United%20Kingdom%2C%20RG4%205AE&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
 </section>
 
 <footer>
+  <img class="footer-logo" src="images/business%20logo.png" alt="Butcher Barbers logo">
   <div>© Butcher Barbers • butcherbarbers.uk</div>
   <div class="social">
     <a href="#">Instagram</a>
     <a href="#">Facebook</a>
-    <a href="https://goldie.co.uk/">Goldie</a>
+    <a href="https://book.heygoldie.com/Butcherbarberuk">Goldie</a>
   </div>
 </footer>
 
